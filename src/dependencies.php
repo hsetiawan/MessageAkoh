@@ -18,11 +18,7 @@ $container['logger'] = function ($c) {
     return $logger;
 };
 
-$container[Logger::class] = function ($c) {
-    $logger = new \Monolog\Logger('logger');
-    return $logger;
-};
-
+//db
 $container['db'] = function ($c) {
     $db = $c->get('settings')['db'];
     $pdo = new PDO('mysql:host=' . $db['host'] . ';dbname=' . $db['dbname'],
@@ -32,7 +28,7 @@ $container['db'] = function ($c) {
     return $pdo;
 };
 
-// messager
+//Message Controller
 $container['MessageController'] = function ($c) {
 	 $logger = $c->get('logger');
 	 $pdo = $c->get('db');

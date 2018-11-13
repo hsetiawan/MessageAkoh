@@ -25,7 +25,7 @@ class MessageController
         $msgStatus = "failed";
 
         
-        $sql = "SELECT * FROM t_message order by created_at desc";
+        $sql = "SELECT * FROM t_message order by created_at desc"; //sql
           try {
               $db = $this->pdo;
               $stmt = $db->prepare($sql);  $stmt->execute();
@@ -125,7 +125,7 @@ class MessageController
         }
         //end of vaidation
 
-        if($doProccess){ //do proccess insert to db 
+        if($doProccess){ //do proccess insert to db  
             $msgContent = $collectParameter["msg"]; // get message content from parameter
             $sender_id = $collectParameter["sender_id"]; // get message content from parameter
             $sql = "INSERT into t_message (message_value,sender_id) values (:message_value,:sender_id)"; //query sql insert

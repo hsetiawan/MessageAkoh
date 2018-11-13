@@ -4,18 +4,26 @@ use Slim\Http\Request;
 use Slim\Http\Response;
 
 // Routes
-
 $app->get('/', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
-
+    // This Log
+    $this->logger->info("'/' route");
     // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    return $this->renderer->render($response, 'index.phtml', $args); 
 });
 
-$app->group('/msg', function() {
-    $this->get('', \MessageController::class . ':getAllMessages'); //get all messages [GET]
-    $this->get('/{idMessage}', \MessageController::class . ':getMessageByID'); //get a message by id [GET]
-    $this->post('', \MessageController::class . ':proccessMessage'); //send message with parameter msg & sender_id [POST]
+$app->group('/msg', function() { 
+    
+	//get all messages [GET], 
+    //routes to MessageController class to method getAllMessages
+    $this->get('', \MessageController::class . ':getAllMessages'); 
+
+
+    //get message by :id [GET], 
+    //routes to MessageController class to method getMessageByID
+    $this->get('/{idMessage}', \MessageController::class . ':getMessageByID'); 
+
+    //send message with parameters `msg & sender_id` [POST], 
+    //routes to MessageController class to method proccessMessage
+    $this->post('', \MessageController::class . ':proccessMessage'); 
 });
  

@@ -16,6 +16,7 @@ return [
             'level' => \Monolog\Logger::DEBUG,
         ],
 
+        // DB settings
         'db' => [
             'host' => 'localhost:3306',
             'dbname' => 'messagedb',
