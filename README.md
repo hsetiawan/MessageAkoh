@@ -2,14 +2,14 @@
 
 MessageAkoh is a Restful API. build with PHP (<a href="https://www.slimframework.com/">Slim Framework</a>) & DB Mysql.
 
-##Requirements
+## Requirements ##
 
 * PHP 5.5.15 or lates version
 * DB : Mysql 5
 * Composer 1.2.0
 
  
-## Setting Connection - Database
+## Setting Connection - Database ##
 clone this project, next go to directory `src/settings.php`. find DB section setting:
 
         'db' => [
@@ -19,9 +19,9 @@ clone this project, next go to directory `src/settings.php`. find DB section set
             'pass' => 'YOURPASSDB',
         ],
 
-Replace all settings parameter.
+Replace all settings parameter to correct your database connection setting .
 
-## Running the Application
+## Running the Application ##
 if you already clone this project, and finish to set up the database.
 you can run these commands
 
@@ -36,13 +36,13 @@ Replace `[yourport]` with the port number you want, ex: 8088. the full commands 
 Voila! MessageAkoh is running :)
 
 
-##How To Use
+## How To Use ##
 
 in this example, I am using `Restlet Client` - Rest API testing (the extension already installed in my google chrome).
 
 *  API for sending a message 
 
-	`
+	```
 	URL 			: http://localhost:8088/msg
 	Method			: POST
 	URL Params 		: -
@@ -50,22 +50,24 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 	Response Code 	: Success (200 OK),Bad Request (404),Not Allowed (405)
 	Response Data 	: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 
-	`
+	```
 
-	Send Parameter :
+	### Send Parameter : ###
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444357-51664d80-e7c6-11e8-8e38-a247810219ae.png" width="90%"></img> 
 
-	Result :
+	### Responses : ###
+
 	if send parameter is success, the result will return data [id message].
 
+	```
 	[
 		{
 			"status": "success",
 			"data": "15"
 		}
 	]
-
+	```
 	<img src="https://user-images.githubusercontent.com/5528011/48444485-a3a76e80-e7c6-11e8-939e-1aa67bcbc8a2.png" width="90%"></img> 
 
 
@@ -81,11 +83,11 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 	
 	```
 
-	Send Parameter :
+	### Send Parameter : ###
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444791-8921c500-e7c7-11e8-884d-d7f6071be086.png" width="90%"></img> 
 
-	Response :
+	### Response : ###
 
 	```
 	[
@@ -115,16 +117,16 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 	Method			: GET
 	URL Params 		: -
 	Data Params		: -
-	Response Code 	: Success (200 OK),Bad Request (404)
+	Response Code 		: Success (200 OK),Bad Request (404)
 	Response Data 	: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 	
 	```
 
-	Send Parameter :
+	### Send Parameter : ###
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444979-06e5d080-e7c8-11e8-8f98-d3983188d673.png" width="90%"></img> 
 
-	Response :
+	### Response : ###
 
 	```
 	[
