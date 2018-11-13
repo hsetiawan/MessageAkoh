@@ -53,7 +53,7 @@ Voila! MessageAkoh is running :)
 
 in this example, I am using `Restlet Client` - Rest API testing (the extension already installed in my google chrome).
 
-### API for sending a message  ###
+### API for sending a message
 
 	```js
 	URL 			: http://localhost:8088/msg
