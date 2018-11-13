@@ -53,7 +53,7 @@ Voila! MessageAkoh is running :)
 
 in this example, I am using `Restlet Client` - Rest API testing (the extension already installed in my google chrome).
 
-### API for sending a message
+### API for sending a message ###
 
 	```js
 	URL 			: http://localhost:8088/msg
@@ -82,8 +82,7 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 	]
 	```
 	<img src="https://user-images.githubusercontent.com/5528011/48444485-a3a76e80-e7c6-11e8-939e-1aa67bcbc8a2.png" width="90%"></img> 
-	<hr/>
-
+ 
 ### API for collect message that has been sent out ###
 
 	```
@@ -121,8 +120,7 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444862-bec6ae00-e7c7-11e8-91ed-575b0fa79104.png" width="90%"></img> 
 
-	</hr>
-
+ 
 ### API for display message in real time ###
 
 	```
@@ -181,9 +179,11 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 
 
-finish.
+Finish.
+
 Thanks for all, if you have any question feel free to contant me.
 
 Regards.
+
 Hendra Setiawan | +6285781830394 | hendset.ti04@gmail.com
 :)
