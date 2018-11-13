@@ -9,7 +9,7 @@ MessageAkoh is a Restful API. build with PHP (<a href="https://www.slimframework
 - [Setting Database](#setting-database)
 - [Running the Project](#running-the-project)
 - [How To Use](#how-to-use)
-	- [1. API for sending a message](#api-for-sending-a-message)
+	- [1. API for sending a message]
 	- [2. API for collect message that has been sent out](#api-for-collect-message-that-has-been-sent-out)
 	- [3. API for display message in real time](#api-for-display-message-in-real-time)
  
@@ -55,14 +55,13 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 ### API for sending a message ###
 
-	```js
+	```
 	URL 			: http://localhost:8088/msg
 	Method			: POST
 	URL Params 		: -
 	Data Params		: {msg:[string],sender_id:[string]}
 	Response Code 		: Success (200 OK),Bad Request (404),Not Allowed (405)
 	Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
-
 	```
 
 	#### Send Parameter : 
@@ -73,7 +72,7 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 	if send parameter is success, the result will return data [id message].
 
-	```js
+	```
 	[
 		{
 			"status": "success",
