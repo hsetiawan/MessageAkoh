@@ -55,7 +55,7 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 ### API for sending a message  ###
 
-	```
+	```js
 	URL 			: http://localhost:8088/msg
 	Method			: POST
 	URL Params 		: -
@@ -73,7 +73,7 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 	if send parameter is success, the result will return data [id message].
 
-	```
+	```js
 	[
 		{
 			"status": "success",
