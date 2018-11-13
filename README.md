@@ -65,11 +65,11 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 
 	```
 
-	#### Send Parameter : ####
+	#### Send Parameter : 
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444357-51664d80-e7c6-11e8-8e38-a247810219ae.png" width="90%"></img> 
 
-	#### Responses : ####
+	#### Responses : 
 
 	if send parameter is success, the result will return data [id message].
 
@@ -96,11 +96,11 @@ in this example, I am using `Restlet Client` - Rest API testing (the extension a
 	
 	```
 
-	#### Send Parameter : ####
+	#### Send Parameter : 
 
 	<img src="https://user-images.githubusercontent.com/5528011/48444791-8921c500-e7c7-11e8-884d-d7f6071be086.png" width="90%"></img> 
 
-	#### Response : ####
+	#### Response : 
 
 	```
 	[
