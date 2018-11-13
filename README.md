@@ -172,7 +172,6 @@ Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 			]
 	}
 ]
-
 ```
 
 <img src="https://user-images.githubusercontent.com/5528011/48445230-a4410480-e7c8-11e8-833f-f243bc8ed3a9.png" width="90%"></img> 
