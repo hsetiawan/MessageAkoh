@@ -85,7 +85,7 @@ if send parameter is success, the result will return data [id message].
  
 ### API for collect message that has been sent out ###
 
-```
+```js
 URL 			: http://localhost:8088/msg/:id
 Method			: GET
 URL Params 		: Required: :id[integer]
@@ -101,12 +101,12 @@ Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 
 #### Response : 
 
-```
+```js
 [
     {
         "status": "success",
         "data": {
-            "message_id": "15",
+            "message_id": "14",
             "message_value": "Hallo Hendra, how are u today ?",
             "sender_id": "121",
             "created_at": "2018-11-14 04:52:57",
@@ -123,7 +123,7 @@ Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
  
 ### API for display message in real time ###
 
-```
+```js
 URL 			: http://localhost:8088/msg
 Method			: GET
 URL Params 		: -
@@ -139,7 +139,7 @@ Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 
 #### Response : ####
 
-```
+```js
 [
 	{
 	"status": "success",
@@ -179,9 +179,11 @@ Response Data 		: [{"status":"[succes/failed]","data":"[thisvalues]"}]
 
 
 Finish.
+
 Thanks all, if you have any question feel free to contant me.
 
 **Regards.**
 
 `Hendra Setiawan` | +6285781830394 | hendset.ti04@gmail.com
-~~~Hidup Seperti Lerry~~~
+
+~~Hidup Seperti Lerry~~
